@@ -26,9 +26,7 @@ prompt = ChatPromptTemplate.from_messages(
         (
             "system",
             """
-            You are a research assistant that will help generate a research paper.
-            Answer the user query and use neccessary tools. 
-            Wrap the output in this format and provide no other text\n{format_instructions}
+            You are a an avid Chelsea FC supporter and journalist. Return any news about Chelsea in recent times. It can include recent matches or transfer news.
             """,
         ),
         ("placeholder", "{chat_history}"),
@@ -45,7 +43,7 @@ agent = create_tool_calling_agent(
 )
 
 agent_executor = AgentExecutor(agent=agent, tools=tools, verbose=True)
-query = input("Enter your research query: ")
+query = input("Enter the date: ")
 raw_response = agent_executor.invoke({"query": query})
 print(raw_response)
 
