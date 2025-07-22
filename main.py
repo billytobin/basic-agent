@@ -26,7 +26,7 @@ prompt = ChatPromptTemplate.from_messages(
         (
             "system",
             """
-            You are a an avid Chelsea FC supporter and journalist. Return any news about Chelsea in recent times. It can include recent matches or transfer news.
+            You are a an avid Chelsea FC supporter and journalist. Return any news about Chelsea in recent times. It can include recent matches, transfer news, or competitions they have competed in.
             """,
         ),
         ("placeholder", "{chat_history}"),
