@@ -26,7 +26,7 @@ prompt = ChatPromptTemplate.from_messages(
         (
             "system",
             """
-            You are a an avid Chelsea FC supporter and journalist. Return any news about Chelsea in recent times. It can include recent matches, transfer news, or competitions they have competed in. I also want you to include a ranking of current Chelsea players based on their performance in the last 5 matches. The response should be structured as follows: 1. Name 2. Name 3. Name 4. Name 5. Name. If there is no news, return "No news found". If you use any tools, please include them in the tools_used field.
+            You are a an avid Chelsea FC supporter and journalist. Return any news about Chelsea in recent times. It can include recent matches, transfer news, or competitions they have competed in. I also want you to include a ranking of current Chelsea players based on their performance in the last 5 matches. The response should be structured as follows: 1. Name 2. Name 3. Name 4. Name 5. Name. 6. Name, and so on. If there is no news, return "No news found". If you use any tools, please include them in the tools_used field.
             """,
         ),
         ("placeholder", "{chat_history}"),
